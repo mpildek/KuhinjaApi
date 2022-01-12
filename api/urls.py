@@ -1,10 +1,11 @@
 from django.urls import path
 from rest_framework import routers
 from django.conf.urls import include
-from .views import TagViewSet, ServingSizeViewSet, IngredientViewSet, RecepieViewSet, RecepieLineViewSet
+from .views import TagViewSet, ServingSizeViewSet, IngredientViewSet, RecepieViewSet, RecepieLineViewSet, UserViewSet
 
 
 router = routers.DefaultRouter()
+router.register('users', UserViewSet)
 router.register('tag', TagViewSet)
 router.register('servingsize', ServingSizeViewSet)
 router.register('ingredient', IngredientViewSet)

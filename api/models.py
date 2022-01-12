@@ -19,7 +19,6 @@ class ServingSize(models.Model):
         return f'{self.qty} {self.uom}'
 
 
-
 class Ingredient(models.Model):
 
     name = models.CharField(max_length=32, unique=True)
