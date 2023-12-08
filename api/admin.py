@@ -20,6 +20,7 @@ class RecepieLineAdmin(admin.ModelAdmin):
 class RecepieLineInLine(admin.TabularInline):
     model = RecepieLine
 
+
 @admin.register(Recepie)
 class RecepieAdmin(admin.ModelAdmin):
     list_display = ['name', 'description']
